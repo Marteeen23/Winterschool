@@ -298,11 +298,47 @@ body {
     font-weight: 600;
  }
 
+
+ h2 {
+  font-size: 2vmax;
+ text-align: center;
+ font-weight: 200;
+ padding-top: 1vmax;
+ padding-bottom: 1vmax;
+} 
+
+
  #timeline-section{
     position: relative;
     float: left;
     width: 100%;
 } 
+
+#countdown-section{
+  position: relative;
+  float: left;
+  width: 100%;
+} 
+
+.container-countdown {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#countdown li {
+  display: inline-block;
+  font-size: 1vmax;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+#countdown li span {
+  display: block;
+  font-size: 2vmax;
+}
+
  
 
 
