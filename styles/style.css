@@ -140,6 +140,8 @@ body {
   }
 
   .btn {
+    text-decoration: underline;
+    text-decoration-color: #35393C;
     border: none;
     text-align: center;
     cursor: pointer;
