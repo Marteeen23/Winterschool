@@ -54,11 +54,10 @@
 #guest-5 {
     background-image: url(../Assets/Images/Guests/vijeta_sharma_1.png);
     background-size: cover;
-    backdrop-filter: brightness(60%);
 }
 
-.label {
-    filter: contrast(100%) !important;
+body .options {
+    margin-bottom: 3vmax;
 }
 
 @media screen and (max-width: 720px) {
@@ -73,6 +72,7 @@
         left: 60px;
         margin-left: 50%;
         transform: translateX(-50%);
+        border-radius: 20px;
     }
     body .options:after {
         content: "";
@@ -86,7 +86,7 @@
         display: none;
     }
     .label .info {
-        position: absolute;
+        position: relative;
         bottom: 2%;
         left: 2%;
         color: white;

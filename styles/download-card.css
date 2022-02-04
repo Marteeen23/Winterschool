@@ -1,0 +1,67 @@
+        .dwnld-btn-container {
+            margin-top: 2em;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .dwnld-btn-container a {
+            color: black;
+            text-decoration: none;
+            height: 0t;
+        }
+        
+        .dwnld-btn {
+            position: relative;
+            text-align: center;
+            margin: 30px;
+            width: 14em;
+            height: 15em;
+            text-transform: uppercase;
+            background: #12121250;
+            cursor: pointer;
+        }
+        
+        .dwnld-btn .title {
+            margin-left: 24px;
+            font-size: 4vmin;
+            text-align: left;
+            padding-top: calc(50% - 1em);
+            z-index: 10;
+            position: relative;
+            line-height: 1em;
+            transition: color linear 0.8s;
+            transition-delay: 0.24s;
+        }
+        
+        .dwnld-btn .subtitle {
+            margin-left: 25px;
+            text-align: left;
+            position: absolute;
+            top: 70%;
+            transition: color linear 0.8s;
+            transition-delay: 0.48s;
+        }
+        
+        .dwnld-btn {
+            transition: all 0.1s;
+        }
+        
+        .dwnld-btn:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            color: white;
+        }
+        
+        .dwnld-btn:hover .arrow-right {
+            width: 12px;
+            height: 12px;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+            position: relative;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: calc(70% + 2px);
+            left: 80%;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.48s;
+            transition-delay: 0.5s;
+        }

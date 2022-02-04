@@ -1,0 +1,1 @@
+All Images should be edited in Photoshop with a mask of Brightness set at -79 and Contrast set at 45.
