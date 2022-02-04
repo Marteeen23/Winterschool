@@ -1,0 +1,401 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://static.fontawesome.com/css/fontawesome-app.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/guest-cards.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <a href="https://2020.robotix.in/"><img src="../Images/Robotix Logo_1.png" alt="robotix-logo" id="rbtx"></a>
+        <a href="../../index.html#main"><span><i class="material-icons">home</i><span
+          class="icon-text">&nbsp;&nbsp;&nbsp;home</span></a><br>
+        <a href="../../index.html#about-section"><span><i class="material-icons">info</i><span
+          class="icon-text">&nbsp;&nbsp;&nbsp;about</span></a><br>
+        <a href="../../index.html#timeline-section"><i class="material-icons">insert_invitation</i><span
+        class="icon-text">&nbsp;&nbsp;&nbsp;timeline</a></span>
+        </a><br>
+        <a href="#"><i class="material-icons">library_books</i><span
+        class="icon-text">&nbsp;&nbsp;&nbsp;verticals</span></a><br>
+        <a href="#"><i class="material-icons">person</i><span class="icon-text">&nbsp;&nbsp;&nbsp;guest lectures<span></a>
+        <br>
+        <br>
+        <br>
+        <a href="../../index.html#freshers-kit-section"><span class="icon-text small-text">&nbsp;&nbsp;&nbsp;&nbsp;freshers' kit</span></a>
+        <a href="archive.html#years-section"><span class="icon-text small-text">&nbsp;&nbsp;&nbsp;&nbsp;archive</span></a>
+        <a href="../../index.html#contact-section"><span class="icon-text small-text">&nbsp;&nbsp;&nbsp;&nbsp;contact<span></a>
+    </div>
+    <div id="main">
+        <div id="topbar">
+            <a href="winterschoolai.robotix.in">
+                <div id="topbar-text">
+                    <img src="../Images/trs logo_1.png" alt="logo"><span id="main-text">Winter School </span>of AI & Robotics
+                </div>
+
+            </a>
+            <!-- <div id="toggler" onclick="darkmodetoggler()" style="position:absolute; right: 5%; float: right;"><i class="material-icons">light_mode</i></div> -->
+        </div>
+        <div id="hero-section">
+
+            <div><img src="../Images/hero-bg_1.png" alt="hero-bg"></div>
+            <div id="hero-text">
+                2022 Registrations now open
+            </div>
+            <div class="button_container">
+                <a href="../../index.html#timeline-section"><button class="btn time-btn"><span>VIEW PROGRAM TIMELINE</span></button></a>
+            </div>
+        </div>
+
+        <div id="countdown-section">
+            <div class="container-countdown">
+                <h2 id="headline">Countdown to Winter School</h1>
+                    <div id="countdown">
+                        <ul>
+                            <li><span id="days"></span>days</li>
+                            <li><span id="hours"></span>Hours</li>
+                            <li><span id="minutes"></span>Minutes</li>
+                            <li><span id="seconds"></span>Seconds</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <div id="years-section">
+            <div>
+                <h1>Past Programs</h1>
+            </div>
+            <div class="year-row year-row-1">
+                <div class="year-column">
+                    <div class="year-card" id="year-2021" onclick="activate2021Archive()">2021</div>
+                </div>
+                <div class="year-column">
+                    <div class="year-card" id="year-2020" onclick="activate2020Archive()">2020</div>
+                </div>
+                <div class="year-column">
+                    <div class="year-card" id="year-2019" onclick="activate2019Archive()">2019</div>
+                </div>
+            </div>
+            <div class="year-row year-row-2">
+                <div class="year-column">
+                    <div class="year-card" id="year-2018" onclick="activate2018Archive()">2018</div>
+                </div>
+            </div>
+        </div>
+        <div id="archive-years-section">
+
+
+
+            <div id="archive-2021">
+                <div>
+                    <h1>2021</h1>
+                </div>
+                <h2>Guest Lectures</h2>
+                <div class="options">
+                    <div class="option active" id="guest-1" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Harini Narasimhan</div>
+                                <div class="sub ">Computer Vision for Healthcare</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-2" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Oretemauw</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-3" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Iteresuselle</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-4" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Idiefe</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-5" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Inatethi</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="archive-2020" class="archive-sections">
+                <div>
+                    <h1>2020</h1>
+                </div>
+                <h2>Guest Lectures</h2>
+                <div class="options">
+                    <div class="option active" id="guest-1" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Harini Narasimhan</div>
+                                <div class="sub ">Computer Vision for Healthcare</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-2" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Oretemauw</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-3" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Iteresuselle</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-4" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Idiefe</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-5" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Inatethi</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="archive-2019">
+                <div>
+                    <h1>2019</h1>
+                </div>
+                <h2>Guest Lectures</h2>
+                <div class="options">
+                    <div class="option active" id="guest-1" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Harini Narasimhan</div>
+                                <div class="sub ">Computer Vision for Healthcare</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-2" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Oretemauw</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-3" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Iteresuselle</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-4" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Idiefe</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-5" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Inatethi</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="archive-2018">
+                <div>
+                    <h1>2018</h1>
+                </div>
+                <h2>Guest Lectures</h2>
+                <div class="options">
+                    <div class="option active" id="guest-1" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Harini Narasimhan</div>
+                                <div class="sub ">Computer Vision for Healthcare</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-2" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Oretemauw</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-3" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Iteresuselle</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-4" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Idiefe</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option " id="guest-5" onclick="window.open('https://youtu.be/86LZxCQaBvw','mywindow');" style="cursor: pointer;">
+                        <div class="shadow "></div>
+                        <div class="label ">
+                            <div class="icon ">
+                                <i class="material-icons ">person</i>
+                            </div>
+                            <div class="info ">
+                                <div class="main ">Inatethi</div>
+                                <div class="sub ">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // Dark Mode
+        function darkmodetoggler() {
+            var element = document.body;
+            element.classList.toggle("dark ");
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="# "]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="../../JS/archive.js "></script>
+    <script src="../../JS/sidebar.js "></script>
+    <script src="../../JS/countdown.js "></script>
+</body>
+
+</html>

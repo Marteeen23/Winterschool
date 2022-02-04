@@ -1,0 +1,214 @@
+/* Guest Lecture Cards */
+
+#archive-years-section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+#archive-2021 {
+    float: left;
+    width: 100%;
+    display: none;
+}
+
+#archive-2020 {
+    float: left;
+    width: 100%;
+    display: none;
+}
+
+#archive-2019 {
+    float: left;
+    width: 100%;
+    display: none;
+}
+
+#archive-2018 {
+    float: left;
+    width: 100%;
+    display: none;
+}
+
+#guest-1 {
+    background-image: url(../Assets/Images/Guests/harini_narasimhan.png);
+    background-size: cover;
+}
+
+#guest-2 {
+    background-image: url(../Assets/Images/Guests/jayanta_mukhopadhyay.png);
+    background-size: cover;
+}
+
+#guest-3 {
+    background-image: url(../Assets/Images/Guests/sinnu_susan.png);
+    background-size: cover;
+}
+
+#guest-4 {
+    background-image: url(../Assets/Images/Guests/usha_rengaraju.png);
+    background-size: cover;
+}
+
+#guest-5 {
+    background-image: url(../Assets/Images/Guests/vijeta_sharma.png);
+    background-size: cover;
+}
+
+@media screen and (max-width: 720px) {
+    body .options .option {
+        height: 200px;
+        width: calc(80% - 60px);
+        display: block;
+        margin-bottom: 20px;
+        float: left;
+        padding: 0 10px;
+        background-position: right center;
+        left: 60px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    body .options:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .shadow {
+        display: none;
+    }
+    .label .icon {
+        display: none;
+    }
+    .label .info {
+        position: absolute;
+        bottom: 2%;
+        left: 2%;
+        color: white;
+    }
+    .label .info .main {
+        font-size: 3vmin;
+        font-weight: bolder;
+    }
+    .label .info .sub {
+        font-size: 2vmin;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    body .options .option {
+        height: 100px;
+        width: calc(100% - 60px);
+    }
+}
+
+@media screen and (min-width: 720px) {
+    body .options {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        overflow: hidden;
+        min-width: 600px;
+        max-width: 900px;
+        width: calc(100% - 100px);
+        height: 300px;
+        justify-content: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    body .options .option {
+        position: relative;
+        overflow: hidden;
+        min-width: 60px;
+        margin: 10px;
+        /* background-size: auto 120%; */
+        background-position: left center;
+        cursor: pointer;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+    body .options .option.active {
+        background-position: 50% center;
+        transform: scale(0.9);
+        max-width: 600px;
+        margin: 0px;
+        border-radius: 40px;
+        flex-grow: 10000;
+    }
+    body .options .option.active .shadow {
+        box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+    }
+    body .options .option.active .label {
+        bottom: 20px;
+        left: 20px;
+    }
+    body .options .option.active .label .info>div {
+        left: 0px;
+        opacity: 1;
+    }
+    body .options .option:not(.active) {
+        flex-grow: 1;
+        border-radius: 30px;
+    }
+    body .options .option:not(.active) .shadow {
+        bottom: -40px;
+        box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+    }
+    body .options .option:not(.active) .label {
+        bottom: 10px;
+        left: 10px;
+    }
+    body .options .option:not(.active) .label .info>div {
+        left: 20px;
+        opacity: 0;
+    }
+    body .options .option .shadow {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 120px;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+    body .options .option .label {
+        display: flex;
+        position: absolute;
+        right: 0px;
+        height: 40px;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+    body .options .option .label .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-width: 40px;
+        max-width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: white;
+    }
+    body .options .option .label .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+        color: white;
+        white-space: pre;
+    }
+    body .options .option .label .info>div {
+        position: relative;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+    }
+    body .options .option .label .info .main {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    body .options .option .label .info .sub {
+        transition-delay: 0.1s;
+    }
+    @media screen and (max-width: 1024px) {
+        body .options .option.active {
+            background-position: right center;
+        }
+    }
+}
