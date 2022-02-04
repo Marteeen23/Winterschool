@@ -569,13 +569,22 @@ time {
 /* Style the counter cards */
 
 .year-card {
-    box-shadow: 15px 15px 54px -10px #0000001f;
+    box-shadow: 10px 10px 30px -20px #000000;
     padding: 40px;
     text-align: center;
     background-color: #f1f1f1;
+    font-size: 3vmin;
 }
 
-@media screen and (max-width: 600px) {
+.year-card:hover {
+    margin-top: 0.5em;
+    -moz-box-shadow: 0px 0.4em 0.5em rgb(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px 0.4em 0.5em rgb(0, 0, 0, 0.8);
+    box-shadow: 0px 0.4em 0.5em rgba(78, 78, 78, 0.8);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
     .year-column {
         width: 100%;
         display: block;
@@ -587,5 +596,21 @@ time {
     .year-row-2 {
         padding-top: 0;
         padding-bottom: 0;
+    }
+    .year-card {
+        padding: 20px;
+        font-size: 2vmax;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .year-row {
+        padding: 0;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .year-card {
+        width: fit-content;
+        font-size: 2vmax;
     }
 }

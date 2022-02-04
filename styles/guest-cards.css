@@ -32,28 +32,33 @@
 }
 
 #guest-1 {
-    background-image: url(../Assets/Images/Guests/harini_narasimhan.png);
+    background-image: url(../Assets/Images/Guests/harini_narasimhan_1.png);
     background-size: cover;
 }
 
 #guest-2 {
-    background-image: url(../Assets/Images/Guests/jayanta_mukhopadhyay.png);
+    background-image: url(../Assets/Images/Guests/jayanta_mukhopadhyay_1.png);
     background-size: cover;
 }
 
 #guest-3 {
-    background-image: url(../Assets/Images/Guests/sinnu_susan.png);
+    background-image: url(../Assets/Images/Guests/sinnu_susan_1.png);
     background-size: cover;
 }
 
 #guest-4 {
-    background-image: url(../Assets/Images/Guests/usha_rengaraju.png);
+    background-image: url(../Assets/Images/Guests/usha_rengaraju_1.png);
     background-size: cover;
 }
 
 #guest-5 {
-    background-image: url(../Assets/Images/Guests/vijeta_sharma.png);
+    background-image: url(../Assets/Images/Guests/vijeta_sharma_1.png);
     background-size: cover;
+    backdrop-filter: brightness(60%);
+}
+
+.label {
+    filter: contrast(100%) !important;
 }
 
 @media screen and (max-width: 720px) {
