@@ -4,7 +4,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/75578d0f7f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="stylesheet" href="styles/footer.css">
 
 
 </head>
@@ -135,17 +138,22 @@
             <div>
                 <h1>Freshers' Kit</h1>
             </div>
-            <p>The Freshers' Kit is our novel initiative, bringing a comprehensive set of robotics components to your doorsteps. We have come up with a kit of several components to suit the demands of most robotics and DIY projects. Comprising of the best
-                equipment, ensured through proper testing, it is a must have for the much-acclaimed Winter School of AI and Robotics. You can find a detailed list of included components in the document given
-                <a href="https://docs.google.com/spreadsheets/d/1cLfCBeH4wrO7GCU_wCbXXiSqlFPzMBHr5m_stPgDSBo/edit#gid=0">here</a>.</p>
-            <br>
-            <p>Owing to our long-standing bond with Bots and Chips, a robotics company based in Kharagpur, we can bring all this to you at a price of &#x20B9;2400(&#x20B9;2250 + &#x20B9;150 delivery charges), the lowest available online. To book your very
-                own Freshers kits, register below and we will get back to you with how to proceed.</p>
-            <br>
-            <div id="register-kit-button" style="display: flex;justify-content: center;">
-                <a href="https://forms.gle/uQWtKoFHVutw8dG6A">
-                    <button class="btn reg-btn"><span>REGISTER HERE</span></button>
-                </a>
+            <div id="freshers-kit-img-section">
+                <img src="Assets\Images\robot-with-tablet.png" alt="Freshers Robot">
+            </div>
+            <div id="freshers-kit-text-section">
+                <p>The Freshers' Kit is our novel initiative, bringing a comprehensive set of robotics components to your doorsteps. We have come up with a kit of several components to suit the demands of most robotics and DIY projects. Comprising of the
+                    best equipment, ensured through proper testing, it is a must have for the much-acclaimed Winter School of AI and Robotics. You can find a detailed list of included components in the document given
+                    <a href="https://docs.google.com/spreadsheets/d/1cLfCBeH4wrO7GCU_wCbXXiSqlFPzMBHr5m_stPgDSBo/edit#gid=0">here</a>.</p>
+                <br>
+                <p>Owing to our long-standing bond with Bots and Chips, a robotics company based in Kharagpur, we can bring all this to you at a price of &#x20B9;2400(&#x20B9;2250 + &#x20B9;150 delivery charges), the lowest available online. To book your
+                    very own Freshers kits, register below and we will get back to you with how to proceed.</p>
+                <br>
+                <div id="register-kit-button" style="display: flex;justify-content: center;">
+                    <a href="https://forms.gle/uQWtKoFHVutw8dG6A">
+                        <button class="btn reg-btn"><span>REGISTER HERE</span></button>
+                    </a>
+                </div>
             </div>
         </div>
         <div id="contact-section">
@@ -155,6 +163,60 @@
             <p>We are always looking for new ideas and feedback. We are very keen to discuss ways to innovate teaching and are also happy to share our experience in creating and leading Winter School. Feel free to contact us with any questions or feedback:
                 we would really appreciate your input!</p>
             <br>
+            <div class="footer">
+                <div class="inner-footer">
+
+                    <!--  for company name and description -->
+                    <div class="footer-title">
+                        <div id="footer-text">
+                            <img src="Assets/Images/trs logo_1.png" alt="logo"><span id="footer-main-text">Winter School </span>of AI & Robotics
+                        </div>
+                        <p>Introducing students to the concepts of Robotics.</p>
+                    </div>
+
+                    <!--  for quick links  -->
+                    <div class="footer-items">
+                        <!--for the underline -->
+                        <ul>
+                            <a href="#">
+                                <li>Home</li>
+                            </a>
+                            <a href="#">
+                                <li>Search</li>
+                            </a>
+                            <a href="#">
+                                <li>Contact</li>
+                            </a>
+                            <a href="#">
+                                <li>About</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <!--  for contact us info -->
+                    <div class="footer-items">
+                        <ul>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, abc</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>123456789</li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+                        </ul>
+
+                        <!--   for social links -->
+                        <div class="social-media">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--   Footer Bottom start  -->
+                <div class="footer-bottom">
+                    Copyright &copy; Technology Rbotix Society 2022.
+                </div>
+            </div>
+
+
         </div>
     </div>
 
@@ -162,11 +224,11 @@
         // Dark Mode
         function darkmodetoggler() {
             var element = document.body;
-            element.classList.toggle("dark");
+            element.classList.toggle("dark ");
         }
 
         // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('a[href^="# "]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
 
@@ -176,9 +238,9 @@
             });
         })
     </script>
-    <script src="JS/countdown.js"></script>
-    <script src="JS/timeline.js"></script>
-    <script src="JS/sidebar.js"></script>
+    <script src="JS/countdown.js "></script>
+    <script src="JS/timeline.js "></script>
+    <script src="JS/sidebar.js "></script>
 
 </body>
 
