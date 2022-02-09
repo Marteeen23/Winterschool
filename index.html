@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/75578d0f7f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
-
+    <link rel="stylesheet" href="styles/contact-us.css">
     <link rel="stylesheet" href="styles/footer.css">
 
 
@@ -163,15 +163,51 @@
             <p>We are always looking for new ideas and feedback. We are very keen to discuss ways to innovate teaching and are also happy to share our experience in creating and leading Winter School. Feel free to contact us with any questions or feedback:
                 we would really appreciate your input!</p>
             <br>
-            <div class="footer">
+            <section id="contact">
+                <div class="contact-box">
+                  <div class="contact-links">
+                    <ul>
+                        <li><a href="https://goo.gl/maps/88cJcxySKA8RcVqB6"><i class="fa fa-map-marker" aria-hidden="true"></i>Lakeside Robotix Lab, Kharagpur</a></li>
+                        <li><a href="tel:7061436275"><i class="fa fa-phone" aria-hidden="true"></i>+91 7061 436 275</a></li>
+                        <li><a href="mailto:winterschoolai@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>winterschoolai@gmail.com</a></li>
+                    </ul>
+                    <ul class="horizontal-align">
+                        <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="contact-form-wrapper">
+                    <form>
+                      <div class="form-item">
+                        <input type="text" name="sender" required>
+                        <label>Name:</label>
+                      </div>
+                      <div class="form-item">
+                        <input type="text" name="phone" required>
+                        <label>Contact No.:</label>
+                      </div>
+                      <div class="form-item">
+                        <input type="text" name="email" required>
+                        <label>Email:</label>
+                      </div>
+                      <div class="form-item">
+                        <textarea class="" name="message" required></textarea>
+                        <label>Message:</label>
+                      </div>
+                      <button class="submit-btn">Send</button>  
+                    </form>
+                  </div>
+                </div>
+              </section>
+        </div>
+        <div class="footer-section">
                 <div class="inner-footer">
-
-                    <!--  for company name and description -->
                     <div class="footer-title">
                         <div id="footer-text">
                             <img src="Assets/Images/trs logo_1.png" alt="logo"><span id="footer-main-text">Winter School </span>of AI & Robotics
                         </div>
-                        <p>Introducing students to the concepts of Robotics.</p>
+                        <div class="footer-sub-text">Introducing students to the concepts of Robotics.</div>
                     </div>
 
                     <!--  for quick links  -->
@@ -182,13 +218,13 @@
                                 <li>Home</li>
                             </a>
                             <a href="#">
-                                <li>Search</li>
+                                <li>Timeline</li>
                             </a>
                             <a href="#">
                                 <li>Contact</li>
                             </a>
                             <a href="#">
-                                <li>About</li>
+                                <li>Guest Lectures</li>
                             </a>
                         </ul>
                     </div>
@@ -196,29 +232,27 @@
                     <!--  for contact us info -->
                     <div class="footer-items">
                         <ul>
-                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, abc</li>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i>123456789</li>
-                            <li><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+                            <a href="#">
+                                <li>Freshers' Kit</li>
+                            </a>
+                            <a href="#">
+                                <li>Verticals</li>
+                            </a>
+                            <a href="#">
+                                <li>Archive</li>
+                            </a>
                         </ul>
-
-                        <!--   for social links -->
-                        <div class="social-media">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-square"></i></a>
-                        </div>
                     </div>
                 </div>
 
                 <!--   Footer Bottom start  -->
                 <div class="footer-bottom">
-                    Copyright &copy; Technology Rbotix Society 2022.
+                    Copyright &copy; Technology Robotix Society 2022.
                 </div>
             </div>
 
 
         </div>
-    </div>
 
     <script>
         // Dark Mode
@@ -226,17 +260,33 @@
             var element = document.body;
             element.classList.toggle("dark ");
         }
-
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="# "]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        })
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
     </script>
     <script src="JS/countdown.js "></script>
     <script src="JS/timeline.js "></script>
