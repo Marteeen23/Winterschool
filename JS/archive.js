@@ -1,18 +1,3 @@
-// const targetDiv = document.getElementById("third");
-// const btn = document.getElementById("toggle");
-// var allElements = document.getElementsByClassName("year-card");
-
-// for (var i = 0; i < buttons.length; i++) {
-//     allElements[i].style.display = "none";
-// }
-
-// btn.onclick = function() {
-//     if (targetDiv.style.display !== "none") {
-//         targetDiv.style.display = "none";
-//     } else {
-//         targetDiv.style.display = "block";
-//     }
-// };
 $(".option").mouseover(function() {
     $(".option").removeClass("active");
     $(this).addClass("active");
