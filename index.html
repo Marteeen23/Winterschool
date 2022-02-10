@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/75578d0f7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/contact-us.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -30,13 +31,13 @@
         <br>
         <br>
         <a href="#freshers-kit-section" class="small-text"><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;freshers' kit</span></a>
-        <a href="Assets/Archive/archive.html#years-section" class="small-text"><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;archive</span></a>
+        <a href="Assets/Archive/archive.html" class="small-text"><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;archive</span></a>
         <a href="#contact-section" class="small-text"><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;contact<span></a>
     </div>
 
     <div id="main">
         <div id="topbar">
-            <a href="winterschoolai.robotix.in">
+            <a href="#">
                 <div id="topbar-text">
                     <img src="Assets/Images/trs logo_1.png" alt="logo"><span id="main-text">Winter School </span>of AI & Robotics
                 </div>
@@ -178,7 +179,7 @@
                     </ul>
                   </div>
                   <div class="contact-form-wrapper">
-                    <form>
+                    <form method="post" name="google-sheet">
                       <div class="form-item">
                         <input type="text" name="sender" required>
                         <label>Name:</label>
@@ -195,7 +196,7 @@
                         <textarea class="" name="message" required></textarea>
                         <label>Message:</label>
                       </div>
-                      <button class="submit-btn">Send</button>  
+                      <input name="submit" type="submit" value="Send" class="submit-btn" />
                     </form>
                   </div>
                 </div>
@@ -205,7 +206,8 @@
                 <div class="inner-footer">
                     <div class="footer-title">
                         <div id="footer-text">
-                            <img src="Assets/Images/trs logo_1.png" alt="logo"><span id="footer-main-text">Winter School </span>of AI & Robotics
+                            <a href="#">
+                            <img src="Assets/Images/trs logo_1.png" alt="logo"><span id="footer-main-text">Winter School </span>of AI & Robotics</a>
                         </div>
                         <div class="footer-sub-text">Introducing students to the concepts of Robotics.</div>
                     </div>
@@ -214,13 +216,13 @@
                     <div class="footer-items">
                         <!--for the underline -->
                         <ul>
-                            <a href="#">
-                                <li>Home</li>
+                            <a href="#about-section">
+                                <li>About</li>
                             </a>
-                            <a href="#">
+                            <a href="#timeline-section">
                                 <li>Timeline</li>
                             </a>
-                            <a href="#">
+                            <a href="#contact-section">
                                 <li>Contact</li>
                             </a>
                             <a href="#">
@@ -232,13 +234,13 @@
                     <!--  for contact us info -->
                     <div class="footer-items">
                         <ul>
-                            <a href="#">
+                            <a href="#freshers-kit-section">
                                 <li>Freshers' Kit</li>
                             </a>
                             <a href="#">
                                 <li>Verticals</li>
                             </a>
-                            <a href="#">
+                            <a href="Assets/Archive/archive.html">
                                 <li>Archive</li>
                             </a>
                         </ul>
@@ -287,10 +289,13 @@
         } // End if
       });
     });
+
+    
     </script>
     <script src="JS/countdown.js "></script>
     <script src="JS/timeline.js "></script>
     <script src="JS/sidebar.js "></script>
+    <script src="JS/contact-us.js "></script>
 
 </body>
 

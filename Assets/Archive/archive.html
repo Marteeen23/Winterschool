@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="../../styles/guest-cards.css">
     <link rel="stylesheet" href="../../styles/minimalist-cards.css">
     <link rel="stylesheet" href="../../styles/download-card.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
 
 
     <title>Document</title>
 </head>
 
-<body>
+<body onLoad="window.scroll(0, 800)">
     <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
         <a href="https://2020.robotix.in/"><img src="../Images/Robotix Logo_1.png" alt="robotix-logo" id="rbtx"></a>
-        <a href="../../index.html#main"><span><i class="material-icons">home</i><span
+        <a href="../../index.html"><span><i class="material-icons">home</i><span
           class="icon-text">&nbsp;&nbsp;&nbsp;home</span></a><br>
         <a href="../../index.html#about-section"><span><i class="material-icons">info</i><span
           class="icon-text">&nbsp;&nbsp;&nbsp;about</span></a><br>
@@ -32,12 +33,12 @@
         <br>
         <br>
         <a href="../../index.html#freshers-kit-section"><span class="icon-text small-text">&nbsp;&nbsp;&nbsp;&nbsp;freshers' kit</span></a>
-        <a href="archive.html#years-section"><span class="icon-text small-text">&nbsp;&nbsp;&nbsp;&nbsp;archive</span></a>
+        <a href="#years-section"><span class="icon-text small-text">&nbsp;&nbsp;&nbsp;&nbsp;archive</span></a>
         <a href="../../index.html#contact-section"><span class="icon-text small-text">&nbsp;&nbsp;&nbsp;&nbsp;contact<span></a>
     </div>
     <div id="main">
         <div id="topbar">
-            <a href="winterschoolai.robotix.in">
+            <a href="../../index.html">
                 <div id="topbar-text">
                     <img src="../Images/trs logo_1.png" alt="logo"><span id="main-text">Winter School </span>of AI & Robotics
                 </div>
@@ -420,24 +421,65 @@
 
             </div>
         </div>
+        <div class="footer-section">
+            <div class="inner-footer">
+                <div class="footer-title">
+                    
+                    <div id="footer-text">
+                        <a href="winterschoolai.robotix.in">
+                        <img src="../../Assets/Images/trs logo_1.png" alt="logo"><span id="footer-main-text">Winter School </span>of AI & Robotics</a>
+                    </div>
+                    <div class="footer-sub-text">Introducing students to the concepts of Robotics.</div>
+                </div>
+
+                <!--  for quick links  -->
+                <div class="footer-items">
+                    <!--for the underline -->
+                    <ul>
+                        <a href="../../index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="../../index.html#timeline-section">
+                            <li>Timeline</li>
+                        </a>
+                        <a href="../../index.html#contact-section">
+                            <li>Contact</li>
+                        </a>
+                        <a href="#">
+                            <li>Guest Lectures</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <!--  for contact us info -->
+                <div class="footer-items">
+                    <ul>
+                        <a href="../../index.html#freshers-kit-section">
+                            <li>Freshers' Kit</li>
+                        </a>
+                        <a href="#">
+                            <li>Verticals</li>
+                        </a>
+                        <a href="#">
+                            <li>Archive</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <!--   Footer Bottom start  -->
+            <div class="footer-bottom">
+                Copyright &copy; Technology Robotix Society 2022.
+            </div>
+        </div>
     </div>
+
     <script>
         // Dark Mode
         function darkmodetoggler() {
             var element = document.body;
             element.classList.toggle("dark ");
         }
-
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="# "]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        })
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
     <script src="../../JS/archive.js "></script>

@@ -16,7 +16,7 @@
             text-align: center;
             margin: 30px;
             width: 14em;
-            height: 15em;
+            height: 14em;
             text-transform: uppercase;
             background: #12121250;
             cursor: pointer;
@@ -64,4 +64,19 @@
             left: 80%;
             transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.48s;
             transition-delay: 0.5s;
+        }
+
+        @media screen and (max-width: 650px) {
+            .dwnld-btn{
+                width: 12em;
+                height: 12em;
+            }
+            .dwnld-btn .title {
+                padding-top: calc(50% - 2em);
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .dwnld-btn .title {
+                font-size: 6vmin;
+            }
         }
