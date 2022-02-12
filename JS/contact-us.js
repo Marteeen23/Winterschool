@@ -8,6 +8,6 @@
           method: 'POST',
           body: new FormData(form)
         })
-        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .then(response => alert("Thanks for Contacting us..! We Will Reach Out to You Soon..."))
         .catch(error => console.error('Error!', error.message))
     })
