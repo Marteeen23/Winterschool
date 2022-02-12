@@ -70,6 +70,7 @@
             .dwnld-btn{
                 width: 12em;
                 height: 12em;
+                margin: 20px;
             }
             .dwnld-btn .title {
                 padding-top: calc(50% - 2em);
@@ -77,6 +78,16 @@
         }
         @media screen and (max-width: 400px) {
             .dwnld-btn .title {
-                font-size: 6vmin;
+                font-size: 3vmin;
+            }
+
+            .dwnld-btn .subtitle{
+                font-size: 2vmin;
+            }
+
+            .dwnld-btn{
+                margin: 10px;
+                width: 6em;
+                height: 6em;
             }
         }

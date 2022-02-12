@@ -51,6 +51,10 @@
             text-align: center;
             font-weight: 600;
         }
+        h3 {
+            font-size: 2vmax;
+            font-weight: 500;
+        }
         
         time {
             display: block;
@@ -114,18 +118,10 @@
         .icon-text {
             text-transform: uppercase;
         }
-        
+
         .small-text {
-            padding: 0 !important;
+            margin-left: 45px;
             font-size: 12px !important;
-            margin-left: 14vmin;
-            margin-bottom: 2vmin;
-        }
-        
-        @media screen and (max-width: 500px) {
-            .small-text {
-                margin-left: 25vmin;
-            }
         }
         
         .material-icons {
@@ -311,17 +307,9 @@
             .sidebar a {
                 font-size: 16px;
             }
-        }
-        
-        @media screen and (max-width: 1200px) {
-            .small-text {
-                padding-left: 12vmin;
-            }
-        }
-        
-        @media screen and (max-width: 500px) {
-            .small-text {
-                padding-left: 25vmin;
+
+            .small-text{
+                margin-left: 32px;
             }
         }
         

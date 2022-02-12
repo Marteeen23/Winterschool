@@ -11,11 +11,19 @@
     <script src="https://kit.fontawesome.com/75578d0f7f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/register-button.css">
     <link rel="stylesheet" href="../../styles/verticals.css">
+    <link rel="stylesheet" href="../../styles/download-card.css">
     <link rel="stylesheet" href="../../styles/footer.css">
 </head>
 
 <body onLoad="window.scroll(0, 800)">
+    <div id="register-section">
+    <a class="float-button" target="_blank" href="https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <span>Register Now<span>
+      </a>
+    </div>
 
     <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
         <a href="https://2020.robotix.in/"><img src="../Images/Robotix Logo_1.png" alt="robotix-logo" id="rbtx"></a>
@@ -24,18 +32,19 @@
         <a href="../../index.html#about-section"><span><i class="material-icons">info</i><span
           class="icon-text">&nbsp;&nbsp;&nbsp;about</span></a><br>
         <a href="../../index.html#timeline-section"><i class="material-icons">insert_invitation</i><span
-        class="icon-text">&nbsp;&nbsp;&nbsp;timeline</a></span>
+        class="icon-text">&nbsp;&nbsp;&nbsp;timeline</span>
         </a><br>
         <a href="#"><i class="material-icons">library_books</i><span
         class="icon-text">&nbsp;&nbsp;&nbsp;verticals</span></a><br>
-        <a href="../Guest Lectures/guest-lectures.html"><i class="material-icons">person</i><span class="icon-text">&nbsp;&nbsp;&nbsp;guest lectures<span></a>
+        <a href="../Guest Lectures/guest-lectures.html"><i class="material-icons">person</i><span class="icon-text">&nbsp;&nbsp;&nbsp;guest lectures</span></a>
         <br>
+        <a class="small-text" href="../../index.html#freshers-kit-section"><span class="icon-text">&nbsp;&nbsp;&nbsp;freshers' kit</span></a>
         <br>
+        <a class="small-text" href="../Archive/archive.html"><span class="icon-text">&nbsp;&nbsp;&nbsp;archive</span></a>
         <br>
-        <a href="../../index.html#freshers-kit-section" class="small-text"><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;freshers' kit</span></a>
-        <a href="../Archive/archive.html" class="small-text"><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;archive</span></a>
-        <a href="../../index.html#contact-section" class="small-text"><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;contact<span></a>
-    </div>
+        <a class="small-text" href="../../index.html#contact-section"><span class="icon-text">&nbsp;&nbsp;&nbsp;contact<span></a>
+        <br>
+        </div>
 
     <div id="main">
         <div id="topbar">
@@ -105,33 +114,60 @@
                 </div>
                 
                 <div id="CVZero" class="tabcontent activeDay">
-                    <h3>London</h3>
-                    <p>London is the capital city of England.</p>
+                    <h2>Syllabus</h2>
+                    <p>Basic of C++, digital image,open 
+                        CV, Grayscale and binary image, 
+                        Gray level transformations, 
+                        Morphing.
+                        </p>
+                        <h2>Resources</h2>
+                        <div class="dwnld-btn-container">
+
+                            <a href="Assets/Schedule/acad_cal2122_1.pdf" download rel="noopener noreferrer" target="_blank">
+                                <div class="dwnld-btn">
+                                    <div class="title">Lecture<br/>Slides</div>
+                                    <div class="subtitle">download</div>
+                                    <div class="arrow-right"></div>
+                                </div>
+                            </a>
+                            <a href="Assets/Schedule/acad_cal2122_1.pdf" download rel="noopener noreferrer" target="_blank">
+                                <div class="dwnld-btn">
+                                    <div class="title">Video<br/>Lectures</div>
+                                    <div class="subtitle">download</div>
+                                    <div class="arrow-right"></div>
+                                </div>
+                            </a>
+                        </div>
+
                 </div>
                 
                 <div id="CVOne" class="tabcontent">
-                    <h3>Paris</h3>
-                    <p>Paris is the capital of France.</p>
+                    <h2>Syllabus</h2>
+                    <p>Histogram, Geometric 
+                        Transformations, Colour 
+                        extraction, Spatial filters, Edge 
+                        detection.
+                        </p>
                 </div>
                 
                 <div id="CVTwo" class="tabcontent">
-                    <h3>Tokyo</h3>
+                    <h2>Tokyo</h2>
                     <p>Tokyo is the capital of Japan.</p>
                 </div>
                 <div id="CVThree" class="tabcontent">
-                    <h3>Tokyo</h3>
+                    <h2>Tokyo</h2>
                     <p>Tokyo is the capital of Japan.</p>
                 </div>
                 <div id="CVFour" class="tabcontent">
-                    <h3>Tokyo</h3>
+                    <h2>Tokyo</h2>
                     <p>Tokyo is the capital of Japan.</p>
                 </div>
                 <div id="CVFive" class="tabcontent">
-                    <h3>Tokyo</h3>
+                    <h2>Tokyo</h2>
                     <p>Tokyo is the capital of Japan.</p>
                 </div>
                 <div id="CVSix" class="tabcontent">
-                    <h3>Tokyo</h3>
+                    <h2>Tokyo</h2>
                     <p>Tokyo is the capital of Japan.</p>
                 </div>
             </div>
@@ -149,33 +185,33 @@
                     </div>
                     
                     <div id="AutoZero" class="tabcontent activeDay">
-                        <h3>London</h3>
+                        <h2>London</h2>
                         <p>London is the capital city of England.</p>
                     </div>
                     
                     <div id="AutoOne" class="tabcontent">
-                        <h3>Paris</h3>
+                        <h2>Paris</h2>
                         <p>Paris is the capital of France.</p>
                     </div>
                     
                     <div id="AutoTwo" class="tabcontent">
-                        <h3>Tokyo</h3>
+                        <h2>Tokyo</h2>
                         <p>Tokyo is the capital of Japan.</p>
                     </div>
                     <div id="AutoThree" class="tabcontent">
-                        <h3>Tokyo</h3>
+                        <h2>Tokyo</h2>
                         <p>Tokyo is the capital of Japan.</p>
                     </div>
                     <div id="AutoFour" class="tabcontent">
-                        <h3>Tokyo</h3>
+                        <h2>Tokyo</h2>
                         <p>Tokyo is the capital of Japan.</p>
                     </div>
                     <div id="AutoFive" class="tabcontent">
-                        <h3>Tokyo</h3>
+                        <h2>Tokyo</h2>
                         <p>Tokyo is the capital of Japan.</p>
                     </div>
                     <div id="AutoSix" class="tabcontent">
-                        <h3>Tokyo</h3>
+                        <h2>Tokyo</h2>
                         <p>Tokyo is the capital of Japan.</p>
                     </div>
                 </div>
@@ -193,33 +229,33 @@
                     </div>
                     
                     <div id="MLZero" class="tabcontent activeDay">
-                        <h3>London</h3>
+                        <h2>London</h2>
                         <p>London is the capital city of England.</p>
                     </div>
                     
                     <div id="MLOne" class="tabcontent">
-                        <h3>Paris</h3>
+                        <h2>Paris</h2>
                         <p>Paris is the capital of France.</p>
                     </div>
                     
                     <div id="MLTwo" class="tabcontent">
-                        <h3>Tokyo</h3>
+                        <h2>Tokyo</h2>
                         <p>Tokyo is the capital of Japan.</p>
                     </div>
                     <div id="MLThree" class="tabcontent">
-                        <h3>Tokyo</h3>
+                        <h2>Tokyo</h2>
                         <p>Tokyo is the capital of Japan.</p>
                     </div>
                     <div id="MLFour" class="tabcontent">
-                        <h3>Tokyo</h3>
+                        <h2>Tokyo</h2>
                         <p>Tokyo is the capital of Japan.</p>
                     </div>
                     <div id="MLFive" class="tabcontent">
-                        <h3>Tokyo</h3>
+                        <h2>Tokyo</h2>
                         <p>Tokyo is the capital of Japan.</p>
                     </div>
                     <div id="MLSix" class="tabcontent">
-                        <h3>Tokyo</h3>
+                        <h2>Tokyo</h2>
                         <p>Tokyo is the capital of Japan.</p>
                     </div>
                     </div>
