@@ -109,6 +109,26 @@
         .sidebar a:hover {
             color: rgb(53, 129, 184);
         }
+
+        #brand-name-section{
+            display: none;
+        }
+
+        #brand-name-section a{
+            font-size: 1.3vmax;
+            text-decoration: none;
+            font-weight: bolder;
+            position: fixed;
+            bottom: 9.5vmax;
+            left: -8vmax;
+            transform: rotate(-90deg);
+            z-index: 100000;
+            color: #35393C;
+        }
+
+        #brand-name-section a:hover{
+            color: #35393C;
+        }
         
         .material-icons,
         .icon-text {
