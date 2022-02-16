@@ -1,9 +1,9 @@
-function openDay(evt, dayName) {
+function openDay(evt, vert_name, dayName) {
 	// Declare all variables
 	var i, tabcontent, tablinks;
   
 	// Get all elements with class="tabcontent" and hide them
-	tabcontent = document.getElementsByClassName("tabcontent");
+	tabcontent = document.getElementsByClassName(vert_name);
 	for (i = 0; i < tabcontent.length; i++) {
 		tabcontent[i].className = tabcontent[i].className.replace(" activeDay", "");
 	}
@@ -24,6 +24,9 @@ function activateCV() {
     document.getElementById("vertical-cv").style.display = "block";
     document.getElementById("vertical-auto").style.display = "none";
     document.getElementById("vertical-ml").style.display = "none";
+
+	
+
 };
 
 function activateAuto() {
