@@ -67,6 +67,7 @@
             text-align: center;
             font-size: 3vmin;
             margin-top: 2vmax;
+            padding: 0% 2%;
         }
         
         .sidebar img {
@@ -140,8 +141,9 @@
         }
 
         .small-text {
-            margin-left: 45px;
+            margin-left: 47px;
             font-size: 12px !important;
+            font-weight: bolder;
         }
         
         .material-icons {
@@ -329,7 +331,7 @@
             }
 
             .small-text{
-                margin-left: 32px;
+                margin-left: 33px;
             }
         }
         
@@ -388,7 +390,7 @@
             bottom: 0;
             width: 400px;
             padding: 15px;
-            background: rgb(53, 129, 184);
+            background: #89CFF0;
         }
         
         .timeline ul li div::before {
@@ -407,7 +409,7 @@
         .timeline ul li:nth-child(odd) div::before {
             left: -15px;
             border-width: 8px 16px 8px 0;
-            border-color: transparent rgb(53, 129, 184) transparent transparent;
+            border-color: transparent #89CFF0 transparent transparent;
         }
         
         .timeline ul li:nth-child(even) div {
@@ -417,7 +419,7 @@
         .timeline ul li:nth-child(even) div::before {
             right: -15px;
             border-width: 8px 0 8px 16px;
-            border-color: transparent transparent transparent rgb(53, 129, 184);
+            border-color: transparent transparent transparent #89CFF0;
         }
         
         .timeline ul li::after {
@@ -477,6 +479,10 @@
             float: left;
             position: relative;
         }
+
+        #register-kit-button{
+            margin-left: 20%;
+        }
         
         @media screen and (max-width: 1200px) {
             #freshers-kit-section img {
@@ -488,7 +494,12 @@
                 float: none;
                 width: 100%;
             }
+            #register-kit-button{
+                margin-left: 0 !important;
+            }
         }
+
+        
         
         .reg-btn:after {
             width: 220% !important;
@@ -548,7 +559,7 @@
             .timeline ul li:nth-child(even) div::before {
                 left: -15px;
                 border-width: 8px 16px 8px 0;
-                border-color: transparent rgb(53, 129, 184) transparent transparent;
+                border-color: transparent #89CFF0 transparent transparent;
             }
             .btn {
                 font-size: 2vmax;

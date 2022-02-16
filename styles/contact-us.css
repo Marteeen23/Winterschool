@@ -6,14 +6,13 @@
   
   .contact-box {
     width: clamp(100px, 90%, 1000px);
-    margin: 30px 50px;
     display: flex;
     flex-wrap: wrap;
   }
   
   .contact-links, .contact-form-wrapper {
     width: 50%;
-    padding: 5% 5% 2% 5%;
+    padding: 5% 0% 2% 0%;
   }
   
   
@@ -28,7 +27,8 @@
   .contact-links ul {
     list-style: none;
     margin-left: 0;
-    font-size: 0.9em;
+    font-size: 1.05em;
+    font-weight: bold;
 }
 
 .contact-links ul li a {
@@ -41,7 +41,7 @@
 }
 
 .contact-links ul li {
-    margin: 25px 10px;
+    margin: 25px 9px;
     height: 25px;
 }
 
@@ -143,6 +143,17 @@
     transform: scale(1.1, 1.1);
     filter: sepia(0.5);
   }
+ 
+
+  @media screen and (max-width: 515px) {
+    .contact-links ul {
+      /* width: 300px; */
+      font-size: 0.85em;
+  }    
+  .contact-links ul li {
+    margin: 25px 6px;
+}
+  }
   @media only screen and (max-width: 400px) {
     
     .links {
@@ -158,10 +169,11 @@
   }
   }
 
-  @media screen and (max-width: 515px) {
+  @media only screen and (max-width: 339px) {
     .contact-links ul {
-      width: 300px;
-      font-size: 0.75em;
-  }    
+      font-size: 0.5em;
+  }   
+  .contact-links ul li {
+    margin: 10px 1px;
+}
   }
-  
