@@ -223,6 +223,7 @@
             top: 3vmax;
             padding-bottom: 3vmax;
             padding-top: 3vmax;
+            padding-left: 3%;
         }
         
         .button_container {
@@ -233,6 +234,7 @@
             top: 0;
             padding-top: 2vmax;
             padding-bottom: 2vmax;
+            padding-left: 3%;
         }
         
         .btn {
@@ -348,12 +350,14 @@
                 top: 0;
                 padding-top: 0;
                 padding-bottom: 1vmax;
+                padding-left: 0;
             }
             .btn {
                 display: block;
             }
             .button_container {
                 float: none;
+                padding-left: 0;
             }
         }
         
