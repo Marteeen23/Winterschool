@@ -322,6 +322,7 @@
             background-image: url("../Assets/Images/Backgrounds/Web-Header-Background.svg");
             background-attachment: fixed;
             background-size: cover;
+            margin-bottom: 3em;
         }
         
         @media screen and (max-width: 450px) {
@@ -365,6 +366,7 @@
             position: relative;
             float: left;
             width: 100%;
+            margin-bottom: 3em;
         }
         
         .timeline ul li {
@@ -466,11 +468,12 @@
             background-attachment: fixed;
             background-size: auto;
             background-position: 10%;
+            margin-bottom: 3em;
         }
         
         #freshers-kit-section img {
             height: auto;
-            width: 20%;
+            width: 19%;
             max-width: 100%;
             float: right;
             background-position: center;
@@ -486,7 +489,7 @@
         }
 
         #register-kit-button{
-            margin-left: 20%;
+            margin-left: 25%;
         }
         
         @media screen and (max-width: 1200px) {
